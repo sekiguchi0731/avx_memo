@@ -1,0 +1,34 @@
+.mondai {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: 200px;
+    font-size: 5rem;
+    
+}
+td, th {
+    border: 2px rgb(0, 0, 0) solid;
+}
+
+.qbtn {
+    /* ボタン全体の書式設定 */
+}
+
+#move1 {
+    visibility: visible;
+}
+
+#move2 {
+    visibility: hidden;
+}
+
+#move3 {
+    visibility: hidden;
+}
+
+#move4 {
+    visibility: hidden;
+}
