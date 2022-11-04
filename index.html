@@ -18,14 +18,24 @@
                 <form onsubmit="return false;" name = "answer1">
                     1問目の回答を入力：
                     <input type="text" name = "txta" id = "form_a" class = "forms">
-                    <input type="button" class = "ansbtn" value = "送信" onclick="ansa()">
+                    <input type="button" id = "btn_a" class = "ansbtn" value = "送信" onclick="ansa()">
+                </form>
+            </div>
+            <div id = "q2" style="display: none;">
+                <div class="question">
+                    <img src="./images/2.png" alt="">
+                </div>
+                <form onsubmit="return false;" name = "answer2">
+                    2問目の回答を入力：
+                    <input type="text" name = "txtb" id = "form_b" class = "forms">
+                    <input type="button" id = "btn_b" class = "ansbtn" value = "送信" onclick="ansb()">
                 </form>
             </div>
             <div class="btn">
-                <button type="button" id = "move1" class = "qbtn">1問目</button>
-                <button type="button" id = "move2" class = "qbtn">2問目</button>
-                <button type="button" id = "move3" class = "qbtn">3問目</button>
-                <button type="button" id = "move4" class = "qbtn">4問目</button>
+                <button type="button" id = "move1" class = "qbtn" onclick="displayq1()">1問目</button>
+                <button type="button" id = "move2" class = "qbtn" onclick="displayq2()">2問目</button>
+                <button type="button" id = "move3" class = "qbtn" onclick="displayq3()">3問目</button>
+                <button type="button" id = "move4" class = "qbtn" onclick="displayq4()">4問目</button>
             </div>
         </div>
     </div> 
