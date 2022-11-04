@@ -28,7 +28,7 @@ function displayq1(){
     if(q_1.style.display != "block"){
         q_1.style.display = "block";
     }
-    if(q_2.style.display == "block"){
+    if(q_2.style.display != "block"){
         q_2.style.display = "none";
     }
 }
