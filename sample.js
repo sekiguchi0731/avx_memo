@@ -48,7 +48,7 @@ function ansb(){
 function displayq2(){
     q_1 = document.getElementById("q1");
     q_2 = document.getElementById("q2");
-    if(q_1.style.display == "block"){
+    if(q_1.style.display != "none"){
         q_1.style.display = "none";
     }
     if(q_2.style.display != "block"){
