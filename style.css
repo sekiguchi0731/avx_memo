@@ -12,8 +12,9 @@ td, th {
     border: 2px rgb(0, 0, 0) solid;
 }
 
-.qbtn {
-    /* ボタン全体の書式設定 */
+.qbtn {/* ボタン全体の書式設定 */
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 #move1 {
@@ -29,5 +30,20 @@ td, th {
 }
 
 #move4 {
+    visibility: hidden;
+}
+#move5 {
+    visibility: hidden;
+}
+
+#move6 {
+    visibility: hidden;
+}
+
+#move7 {
+    visibility: hidden;
+}
+
+#move8 {
     visibility: hidden;
 }
