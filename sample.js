@@ -25,7 +25,9 @@ function ansa(){
     //参照渡し
     var soshin1 = document.getElementById("btn_a");
     var qbtn2 = document.getElementById("move2");
-    var popup = document.getElementById("ppup");
+    var popup = document.getElementById("ppup-wrap");
+    var popup_t = document.getElementById("ppup");
+    var popup_t2 = document.getElementById("ppup2");
     var a_1 = document.getElementById("a1");
 
     //console.log();
@@ -35,8 +37,13 @@ function ansa(){
         ans_a.disabled = true;
         soshin1.disabled = true;
         popup.style.display = "block";
+        popup_t.style.display = "block";
+        popup_t2.style.display = "none";
         a_1.style.display = "block";
         counter++;
+    }else{
+        popup.style.display = "block";
+        popup_t2.style.display = "block";
     }
 }
 
@@ -112,7 +119,9 @@ function ansb(){
     var ans_b = document.getElementById("form_b");
     var soshin2 = document.getElementById("btn_b");
     var qbtn3 = document.getElementById("move3");
-    var popup = document.getElementById("ppup");
+    var popup = document.getElementById("ppup-wrap");
+    var popup_t = document.getElementById("ppup");
+    var popup_t2 = document.getElementById("ppup2");
     var a_2 = document.getElementById("a2");
 
     if(ans_b.value == "2"){
@@ -120,8 +129,13 @@ function ansb(){
         ans_b.disabled = true;
         soshin2.disabled = true;
         popup.style.display = "block";
+        popup_t.style.display = "block";
+        popup_t2.style.display = "none";
         a_2.style.display = "block";
         counter++;
+    }else{
+        popup.style.display = "block";
+        popup_t2.style.display = "block";
     }
 }
 
@@ -195,7 +209,9 @@ function ansc(){
     var ans_c = document.getElementById("form_c");
     var soshin3 = document.getElementById("btn_c");
     var qbtn4 = document.getElementById("move4");
-    var popup = document.getElementById("ppup");
+    var popup = document.getElementById("ppup-wrap");
+    var popup_t = document.getElementById("ppup");
+    var popup_t2 = document.getElementById("ppup2");
     var a_3 = document.getElementById("a3");
 
     if(ans_c.value == "3"){
@@ -203,8 +219,13 @@ function ansc(){
         ans_c.disabled = true;
         soshin3.disabled = true;
         popup.style.display = "block";
+        popup_t.style.display = "block";
+        popup_t2.style.display = "none";
         a_3.style.display = "block";
         counter++;
+    }else{
+        popup.style.display = "block";
+        popup_t2.style.display = "block";
     }
 }
 
@@ -278,7 +299,9 @@ function ansd(){
     var ans_d = document.getElementById("form_d");
     var soshin4 = document.getElementById("btn_d");
     var qbtn5 = document.getElementById("move5");
-    var popup = document.getElementById("ppup");
+    var popup = document.getElementById("ppup-wrap");
+    var popup_t = document.getElementById("ppup");
+    var popup_t2 = document.getElementById("ppup2");
     var a_4 = document.getElementById("a4");
 
     if(ans_d.value == "4"){
@@ -286,8 +309,13 @@ function ansd(){
         ans_d.disabled = true;
         soshin4.disabled = true;
         popup.style.display = "block";
+        popup_t.style.display = "block";
+        popup_t2.style.display = "none";
         a_4.style.display = "block";
         counter++;
+    }else{
+        popup.style.display = "block";
+        popup_t2.style.display = "block";
     }
 }
 
@@ -362,7 +390,9 @@ function anse(){
     var ans_e = document.getElementById("form_e");
     var soshin5 = document.getElementById("btn_e");
     var qbtn6 = document.getElementById("move6");
-    var popup = document.getElementById("ppup");
+    var popup = document.getElementById("ppup-wrap");
+    var popup_t = document.getElementById("ppup");
+    var popup_t2 = document.getElementById("ppup2");
     var a_5 = document.getElementById("a5");
 
     if(ans_e.value == "5"){
@@ -370,8 +400,13 @@ function anse(){
         ans_e.disabled = true;
         soshin5.disabled = true;
         popup.style.display = "block";
+        popup_t.style.display = "block";
+        popup_t2.style.display = "none";
         a_5.style.display = "block";
         counter++;
+    }else{
+        popup.style.display = "block";
+        popup_t2.style.display = "block";
     }
 }
 
@@ -445,7 +480,9 @@ function ansf(){
     var ans_f = document.getElementById("form_f");
     var soshin6 = document.getElementById("btn_f");
     var qbtn7 = document.getElementById("move7");
-    var popup = document.getElementById("ppup");
+    var popup = document.getElementById("ppup-wrap");
+    var popup_t = document.getElementById("ppup");
+    var popup_t2 = document.getElementById("ppup2");
     var a_6 = document.getElementById("a6");
 
     if(ans_f.value == "6"){
@@ -453,8 +490,13 @@ function ansf(){
         ans_f.disabled = true;
         soshin6.disabled = true;
         popup.style.display = "block";
+        popup_t.style.display = "block";
+        popup_t2.style.display = "none";
         a_6.style.display = "block";
         counter++;
+    }else{
+        popup.style.display = "block";
+        popup_t2.style.display = "block";
     }
 }
 
@@ -528,7 +570,9 @@ function ansg(){
     var ans_g = document.getElementById("form_g");
     var soshin7 = document.getElementById("btn_g");
     var qbtn8 = document.getElementById("move8");
-    var popup = document.getElementById("ppup");
+    var popup = document.getElementById("ppup-wrap");
+    var popup_t = document.getElementById("ppup");
+    var popup_t2 = document.getElementById("ppup2");
     var a_7 = document.getElementById("a7");
 
     if(ans_g.value == "7"){
@@ -536,8 +580,13 @@ function ansg(){
         ans_g.disabled = true;
         soshin7.disabled = true;
         popup.style.display = "block";
+        popup_t.style.display = "block";
+        popup_t2.style.display = "none";
         a_7.style.display = "block";
         counter++;
+    }else{
+        popup.style.display = "block";
+        popup_t2.style.display = "block";
     }
 }
 
@@ -611,7 +660,9 @@ function ansh(){
     var ans_h = document.getElementById("form_h");
     var soshin8 = document.getElementById("btn_h");
     // var qbtn6 = document.getElementById("move6");
-    var popup = document.getElementById("ppup");
+    var popup = document.getElementById("ppup-wrap");
+    var popup_t = document.getElementById("ppup");
+    var popup_t2 = document.getElementById("ppup2");
     var a_8 = document.getElementById("a8");
 
     if(ans_h.value == "8"){
@@ -619,8 +670,13 @@ function ansh(){
         ans_h.disabled = true;
         soshin8.disabled = true;
         popup.style.display = "block";
+        popup_t.style.display = "block";
+        popup_t2.style.display = "none";
         a_8.style.display = "block";
         counter++;
+    }else{
+        popup.style.display = "block";
+        popup_t2.style.display = "block";
     }
 }
 
@@ -692,7 +748,7 @@ function displayq8(){
 }
 
 function popupclose(){
-    var pp = document.getElementById("ppup");
+    var pp = document.getElementById("ppup-wrap");
 
     pp.style.display = "none";
 }

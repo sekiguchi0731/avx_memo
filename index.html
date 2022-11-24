@@ -146,9 +146,17 @@
                     </div>
                 </div>
              </div>
-            <div id = "ppup" class="popup" style="display: none;">
+        </div>
+        <div id="ppup-wrap" style="display:none;">
+            <div id = "ppup" class="popup" style="display:none;">
                 <div class="pupuptxt">
-                    "正解！"<br>"条件が提示されました！"
+                    正解！<br>条件が提示されました！
+                </div>
+                <input type="button" id = "close" value = "閉じる" onclick="popupclose()">
+            </div>
+            <div id = "ppup2" class="popup" style="display:none;">
+                <div class="pupuptxt">
+                    不正解...<br>もう一度考えてみよう。
                 </div>
                 <input type="button" id = "close" value = "閉じる" onclick="popupclose()">
             </div>
