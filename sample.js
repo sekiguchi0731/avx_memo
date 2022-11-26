@@ -407,6 +407,7 @@ function anse(){
         a_5.style.display = "block";
         counter++;
     }else{
+        popup_last.style.display = "none";
         popup.style.display = "block";
         popup_t2.style.display = "block";
     }
