@@ -16,15 +16,15 @@
                 <button type="button" id = "move2" class = "qbtn" onclick="displayq2()">2問目</button>
                 <button type="button" id = "move3" class = "qbtn" onclick="displayq3()">3問目</button>
                 <button type="button" id = "move4" class = "qbtn" onclick="displayq4()">4問目</button>
-                <button type="button" id = "move5" class = "qbtn" onclick="displayq5()">5問目</button>
-                <button type="button" id = "move6" class = "qbtn" onclick="displayq6()">6問目</button>
-                <button type="button" id = "move7" class = "qbtn" onclick="displayq7()">7問目</button>
-                <button type="button" id = "move8" class = "qbtn" onclick="displayq8()">8問目</button>                          
+                <button type="button" id = "move5" class = "qbtn" onclick="displayq5()">5問目</button>                        
             </div>
             <div class="quest">
                 <div id = "q1" sytle = "display: block;">
                     <div class="question">
                         <img src="./images/q1.png" alt="" width="300px">
+                        <img src="./images/1.png" alt="" width="300px">
+                        <img src="./images/1.png" alt="" width="300px">
+                        <br>↑それぞれテープの貼り方、十字形イラストに変更</br>
                     </div>
                     <form onsubmit="return false;" name = "answer1">
                         1問目の解答を入力：
@@ -55,6 +55,9 @@
                 <div id = "q4" style="display: none;">
                     <div class="question">
                         <img src="./images/q4.png" alt="" width="300px">
+                        <img src="./images/4.png" alt="" width="300px">
+                        <img src="./images/4.png" alt="" width="300px">
+                        <br>↑それぞれ箱とテープのイラストに変更</br>
                     </div>
                     <form onsubmit="return false;" name = "answer4">
                         4問目の解答を入力：
@@ -72,76 +75,51 @@
                         <input type="button" id = "btn_e" class = "ansbtn" value = "送信" onclick="anse()">
                     </form>
                 </div>
-                <div id = "q6" style="display: none;">
-                    <div class="question">
-                        <img src="./images/6.png" alt="">
-                    </div>
-                    <form onsubmit="return false;" name = "answer6">
-                        6問目の回答を入力：
-                        <input type="text" name = "txtf" id = "form_f" class = "forms">
-                        <input type="button" id = "btn_f" class = "ansbtn" value = "送信" onclick="ansf()">
-                    </form>
-                </div>
-                <div id = "q7" style="display: none;">
-                    <div class="question">
-                        <img src="./images/7.png" alt="">
-                    </div>
-                    <form onsubmit="return false;" name = "answer7">
-                        7問目の回答を入力：
-                        <input type="text" name = "txtg" id = "form_g" class = "forms">
-                        <input type="button" id = "btn_g" class = "ansbtn" value = "送信" onclick="ansg()">
-                    </form>
-                </div>
-                <div id = "q8" style="display: none;">
-                    <div class="question">
-                        <img src="./images/8.png" alt="">
-                    </div>
-                    <form onsubmit="return false;" name = "answer8">
-                        8問目の回答を入力：
-                        <input type="text" name = "txth" id = "form_h" class = "forms">
-                        <input type="button" id = "btn_h" class = "ansbtn" value = "送信" onclick="ansh()">
-                    </form>
-                </div>
              </div>
              <div class="ans">
                 <div id="a1" style="display: none;">
                     <div class="ans">
                         <img src="./images/j1.png" alt="" srcset="" width="300px">
+                        <br>
+                            箱1に入るアイテムは分かりましたか？
+                            <input type="button" id = "btn_ja" class = "yesbtn" value = "はい" onclick="next()">
+                        </br>
                     </div>
                 </div>
                 <div id="a2" style="display: none;">
                     <div class="ans">
                         <img src="./images/j2.png" alt="" srcset="" width="300px">
+                        <br>
+                        箱2に入るアイテムは分かりましたか？
+                        <input type="button" id = "btn_jb" class = "yesbtn" value = "はい" onclick="next()">
+                    </br>
                     </div>
                 </div>
                 <div id="a3" style="display: none;">
                     <div class="ans">
                         <img src="./images/j3.png" alt="" srcset="" width="300px">
+                        <br>
+                        箱3に入るアイテムは分かりましたか？
+                        <input type="button" id = "btn_jc" class = "yesbtn" value = "はい" onclick="next()">
+                    </br>
                     </div>
                 </div>
                 <div id="a4" style="display: none;">
                     <div class="ans">
                         <img src="./images/j4.png" alt="" srcset="" width="300px">
+                        <br>
+                        箱4に入るアイテムは分かりましたか？
+                        <input type="button" id = "btn_jd" class = "yesbtn" value = "はい" onclick="next()">
+                    </br>
                     </div>
                 </div>
                 <div id="a5" style="display: none;">
                     <div class="ans">
                         <img src="./images/j1.png" alt="" srcset="" width="300px">
-                    </div>
-                </div>
-                <div id="a6" style="display: none;">
-                    <div class="ans">
-                        <img src="./images/a6.png" alt="" srcset="">
-                    </div>
-                </div>
-                <div id="a7" style="display: none;">
-                    <div class="ans">
-                        <img src="./images/a7.png" alt="" srcset="">
-                    </div>
-                </div>
-                <div id="a8" style="display: none;">
-                    <div class="ans">
-                        <img src="./images/a8.png" alt="" srcset="">
+                        <br>
+                        箱5に入るアイテムは分かりましたか？
+                        <input type="button" id = "btn_je" class = "yesbtn" value = "はい" onclick="next()">
+                    </br>
                     </div>
                 </div>
              </div>
@@ -162,6 +140,18 @@
             <div id = "ppup3" class="popup" style="display:none;">
                 <div class="pupuptxt">
                     これが最後の謎です。
+                </div>
+                <input type="button" id = "close" value = "閉じる" onclick="popupclose()">
+            </div>
+            <div id = "ppup4" class="popup" style="display:none;">
+                <div class="pupuptxt">
+                    次の謎が表示されました！
+                </div>
+                <input type="button" id = "close" value = "閉じる" onclick="popupclose2()">
+            </div>
+            <div id = "ppup5" class="popup" style="display:none;">
+                <div class="pupuptxt">
+                    必要なアイテムを持って、ブースに向かいましょう。
                 </div>
                 <input type="button" id = "close" value = "閉じる" onclick="popupclose()">
             </div>
