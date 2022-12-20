@@ -341,8 +341,8 @@ function displayq5() {
     var a_3 = document.getElementById("a3");
     var a_4 = document.getElementById("a4");
     var a_5 = document.getElementById("a5");
-    var popup = document.getElementById("ppup-wrap");
-    var popup_last = document.getElementById("ppup3");
+    // var popup = document.getElementById("ppup-wrap");
+    // var popup_last = document.getElementById("ppup3");
 
     if (q_1.style.display != "none") {
         q_1.style.display = "none";
@@ -376,8 +376,8 @@ function displayq5() {
         a_5.style.display = "block";
     }
 
-    popup.style.display = "block";
-    popup_last.style.display = "block";
+    // popup.style.display = "block";
+    // popup_last.style.display = "block";
 }
 
 // function popupclose() {
