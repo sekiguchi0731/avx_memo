@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,155 +8,168 @@
     <title>Memo</title>
     <link rel="stylesheet" href="style.css">
     <script src="./sample.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
+
 <body>
     <div class="main">
         <div class="wrap">
-            <div class="btn">
-                <button type="button" id = "move1" class = "qbtn" onclick="displayq1()">1問目</button>
-                <button type="button" id = "move2" class = "qbtn" onclick="displayq2()">2問目</button>
-                <button type="button" id = "move3" class = "qbtn" onclick="displayq3()">3問目</button>
-                <button type="button" id = "move4" class = "qbtn" onclick="displayq4()">4問目</button>
-                <button type="button" id = "move5" class = "qbtn" onclick="displayq5()">5問目</button>                        
-            </div>
+            <!-- <div class="btn">
+                <button type="button" id="move1" class="qbtn" onclick="displayq1()">1問目</button>
+                <button type="button" id="move2" class="qbtn" onclick="displayq2()">2問目</button>
+                <button type="button" id="move3" class="qbtn" onclick="displayq3()">3問目</button>
+                <button type="button" id="move4" class="qbtn" onclick="displayq4()">4問目</button>
+                <button type="button" id="move5" class="qbtn" onclick="displayq5()">5問目</button>
+            </div> -->
+            <nav>
+                <ul id="nav">
+                    <li><a id="move1" class="qbtn" onclick="displayq1()">1問目</a></li>
+                    <li><a id="move2" class="qbtn" onclick="displayq2()">2問目</a></li>
+                    <li><a id="move3" class="qbtn" onclick="displayq3()">3問目</a></li>
+                    <li><a id="move4" class="qbtn" onclick="displayq4()">4問目</a></li>
+                    <li><a id="move5" class="qbtn" onclick="displayq5()">5問目</a></li>
+                </ul>
+            </nav>
             <div class="quest">
-                <div id = "q1" sytle = "display: block;">
+                <div id="q1" sytle="display: block;">
                     <div class="question">
-                        <img src="./images/q1.png" alt="" width="300px">
-                        <img src="./images/1.png" alt="" width="300px">
-                        <img src="./images/1.png" alt="" width="300px">
+                        <img class="questionimg" src="./images/q1.png" alt="">
+                        <img class="conditionimg" src="./images/1.png" alt="">
+                        <img class="conditionimg" src="./images/1.png" alt="">
                         <br>↑それぞれテープの貼り方、十字形イラストに変更</br>
                     </div>
-                    <form onsubmit="return false;" name = "answer1">
+                    <form onsubmit="return false;" name="answer1">
                         1問目の解答を入力：
-                        <input type="text" name = "txta" id = "form_a" class = "forms" placeholder="漢字">
-                        <input type="button" id = "btn_a" class = "ansbtn" value = "送信" onclick="ansa()">
+                        <input type="text" name="txta" id="form_a" class="forms" placeholder="漢字">
+                        <input type="button" id="btn_a" class="ansbtn" value="送信" onclick="ansa()">
                     </form>
                 </div>
-                <div id = "q2" style="display: none;">
+                <div id="q2" style="display: none;">
                     <div class="question">
-                        <img src="./images/q2.png" alt="" width="300px">
+                        <img class="questionimg" src="./images/q2.png" alt="">
                     </div>
-                    <form onsubmit="return false;" name = "answer2">
+                    <form onsubmit="return false;" name="answer2">
                         2問目の解答を入力：
-                        <input type="text" name = "txtb" id = "form_b" class = "forms" placeholder="漢字">
-                        <input type="button" id = "btn_b" class = "ansbtn" value = "送信" onclick="ansb()">
+                        <input type="text" name="txtb" id="form_b" class="forms" placeholder="漢字">
+                        <input type="button" id="btn_b" class="ansbtn" value="送信" onclick="ansb()">
                     </form>
                 </div>
-                <div id = "q3" style="display: none;">
+                <div id="q3" style="display: none;">
                     <div class="question">
-                        <img src="./images/q3.png" alt="" width="300px">
+                        <img class="questionimg" src="./images/q3.png" alt="">
                     </div>
-                    <form onsubmit="return false;" name = "answer3">
+                    <form onsubmit="return false;" name="answer3">
                         3問目の解答を入力：
-                        <input type="text" name = "txtc" id = "form_c" class = "forms" placeholder="漢字">
-                        <input type="button" id = "btn_c" class = "ansbtn" value = "送信" onclick="ansc()">
+                        <input type="text" name="txtc" id="form_c" class="forms" placeholder="漢字">
+                        <input type="button" id="btn_c" class="ansbtn" value="送信" onclick="ansc()">
                     </form>
                 </div>
-                <div id = "q4" style="display: none;">
+                <div id="q4" style="display: none;">
                     <div class="question">
-                        <img src="./images/q4.png" alt="" width="300px">
-                        <img src="./images/4.png" alt="" width="300px">
-                        <img src="./images/4.png" alt="" width="300px">
+                        <img class="questionimg" src="./images/q4.png" alt="">
+                        <img class="conditionimg" src="./images/4.png" alt="">
+                        <img class="conditionimg" src="./images/4.png" alt="">
                         <br>↑それぞれ箱とテープのイラストに変更</br>
                     </div>
-                    <form onsubmit="return false;" name = "answer4">
+                    <form onsubmit="return false;" name="answer4">
                         4問目の解答を入力：
-                        <input type="text" name = "txtd" id = "form_d" class = "forms" placeholder="ひらがな">
-                        <input type="button" id = "btn_d" class = "ansbtn" value = "送信" onclick="ansd()">
+                        <input type="text" name="txtd" id="form_d" class="forms" placeholder="ひらがな">
+                        <input type="button" id="btn_d" class="ansbtn" value="送信" onclick="ansd()">
                     </form>
                 </div>
-                <div id = "q5" style="display: none;">
+                <div id="q5" style="display: none;">
                     <div class="question">
-                        <img src="./images/q5.png" alt="" width="300px">
+                        <img class="questionimg" src="./images/q5.png" alt="">
                     </div>
-                    <form onsubmit="return false;" name = "answer5">
+                    <form onsubmit="return false;" name="answer5">
                         5問目の解答を入力：
-                        <input type="text" name = "txte" id = "form_e" class = "forms" placeholder="アルファベット">
-                        <input type="button" id = "btn_e" class = "ansbtn" value = "送信" onclick="anse()">
+                        <input type="text" name="txte" id="form_e" class="forms" placeholder="アルファベット">
+                        <input type="button" id="btn_e" class="ansbtn" value="送信" onclick="anse()">
                     </form>
                 </div>
-             </div>
-             <div class="ans">
-                <div id="a1" style="display: none;">
-                    <div class="ans">
-                        <img src="./images/j1.png" alt="" srcset="" width="300px">
-                        <br>
-                            箱1に入るアイテムは分かりましたか？
-                            <input type="button" id = "btn_ja" class = "yesbtn" value = "はい" onclick="next()">
-                        </br>
-                    </div>
-                </div>
-                <div id="a2" style="display: none;">
-                    <div class="ans">
-                        <img src="./images/j2.png" alt="" srcset="" width="300px">
-                        <br>
-                        箱2に入るアイテムは分かりましたか？
-                        <input type="button" id = "btn_jb" class = "yesbtn" value = "はい" onclick="next()">
-                    </br>
-                    </div>
-                </div>
-                <div id="a3" style="display: none;">
-                    <div class="ans">
-                        <img src="./images/j3.png" alt="" srcset="" width="300px">
-                        <br>
-                        箱3に入るアイテムは分かりましたか？
-                        <input type="button" id = "btn_jc" class = "yesbtn" value = "はい" onclick="next()">
-                    </br>
-                    </div>
-                </div>
-                <div id="a4" style="display: none;">
-                    <div class="ans">
-                        <img src="./images/j4.png" alt="" srcset="" width="300px">
-                        <br>
-                        箱4に入るアイテムは分かりましたか？
-                        <input type="button" id = "btn_jd" class = "yesbtn" value = "はい" onclick="next()">
-                    </br>
-                    </div>
-                </div>
-                <div id="a5" style="display: none;">
-                    <div class="ans">
-                        <img src="./images/j1.png" alt="" srcset="" width="300px">
-                        <br>
-                        箱5に入るアイテムは分かりましたか？
-                        <input type="button" id = "btn_je" class = "yesbtn" value = "はい" onclick="next()">
-                    </br>
-                    </div>
-                </div>
-             </div>
-        </div>
-        <div id="ppup-wrap" style="display:none;">
-            <div id = "ppup" class="popup" style="display:none;">
-                <div class="pupuptxt">
-                    正解！<br>条件が提示されました！
-                </div>
-                <input type="button" id = "close" value = "閉じる" onclick="popupclose()">
             </div>
-            <div id = "ppup2" class="popup" style="display:none;">
-                <div class="pupuptxt">
-                    不正解...<br>もう一度考えてみよう。
-                </div>
-                <input type="button" id = "close" value = "閉じる" onclick="popupclose()">
+            <div id="layer"></div>
+            <div id="popup">
+                <div class="popuptext"></div>
+                <input type="button" id="close" value="閉じる">
             </div>
-            <div id = "ppup3" class="popup" style="display:none;">
-                <div class="pupuptxt">
-                    これが最後の謎です。
+            <!-- <div class="ans"> -->
+            <div id="a1" style="display: none;">
+                <div class="ans">
+                    <img src="./images/j1.png" alt="" srcset="">
+                    <br> 箱1に入るアイテムは分かりましたか？<br>
+                    <input type="button" id="btn_ja" class="yesbtn" value="はい" onclick="next()">
+                    </br>
                 </div>
-                <input type="button" id = "close" value = "閉じる" onclick="popupclose()">
             </div>
-            <div id = "ppup4" class="popup" style="display:none;">
-                <div class="pupuptxt">
-                    次の謎が表示されました！
+            <div id="a2" style="display: none;">
+                <div class="ans">
+                    <img src="./images/j2.png" alt="" srcset="">
+                    <br> 箱2に入るアイテムは分かりましたか？<br>
+                    <input type="button" id="btn_jb" class="yesbtn" value="はい" onclick="next()">
+                    </br>
                 </div>
-                <input type="button" id = "close" value = "閉じる" onclick="popupclose2()">
             </div>
-            <div id = "ppup5" class="popup" style="display:none;">
-                <div class="pupuptxt">
-                    必要なアイテムを持って、ブースに向かいましょう。
+            <div id="a3" style="display: none;">
+                <div class="ans">
+                    <img src="./images/j3.png" alt="" srcset="">
+                    <br> 箱3に入るアイテムは分かりましたか？<br>
+                    <input type="button" id="btn_jc" class="yesbtn" value="はい" onclick="next()">
+                    </br>
                 </div>
-                <input type="button" id = "close" value = "閉じる" onclick="popupclose()">
+            </div>
+            <div id="a4" style="display: none;">
+                <div class="ans">
+                    <img src="./images/j4.png" alt="" srcset="">
+                    <br> 箱4に入るアイテムは分かりましたか？<br>
+                    <input type="button" id="btn_jd" class="yesbtn" value="はい" onclick="next()">
+                    </br>
+                </div>
+            </div>
+            <div id="a5" style="display: none;">
+                <div class="ans">
+                    <img src="./images/j1.png" alt="" srcset="">
+                    <br> 箱5に入るアイテムは分かりましたか？<br>
+                    <input type="button" id="btn_je" class="yesbtn" value="はい" onclick="next()">
+                    </br>
+                </div>
             </div>
         </div>
-    </div> 
+    </div>
+
+    <!-- <div id="ppup-wrap" style="display: none;"> -->
+    <div id="ppup" class="popup" style="display: none;">
+        <div class="pupuptxt">
+            正解！<br>条件が提示されました！
+        </div>
+        <input type="button" id="close" value="閉じる" onclick="popupclose()">
+    </div>
+    <div id="ppup2" class="popup" style="display: none;">
+        <div class="pupuptxt">
+            不正解...<br>もう一度考えてみよう。
+        </div>
+        <input type="button" id="close" value="閉じる" onclick="popupclose()">
+    </div>
+    <div id="ppup3" class="popup" style="display: none;">
+        <div class="pupuptxt">
+            これが最後の謎です。
+        </div>
+        <input type="button" id="close" value="閉じる" onclick="popupclose()">
+    </div>
+    <div id="ppup4" class="popup" style="display: none;">
+        <div class="pupuptxt">
+            次の謎が表示されました！
+        </div>
+        <input type="button" id="close" value="閉じる" onclick="popupclose2()">
+    </div>
+    <div id="ppup5" class="popup" style="display: none;">
+        <div class="pupuptxt">
+            必要なアイテムを持って、ブースに向かいましょう。
+        </div>
+        <input type="button" id="close" value="閉じる" onclick="popupclose()">
+    </div>
+    </div>
+    </div>
 </body>
+
 </html>
