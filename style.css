@@ -1,3 +1,8 @@
+input[type=text] {
+    font-size: 16px;
+    transform: scale(0.8);
+  }
+
 .mondai {
     display: -webkit-flex;
     display: flex;
@@ -114,7 +119,6 @@ p {
     height: 2.0em;
     margin: 10px 5px;
     width: fit-content;
-    touch-action: none;
 }
 
 
