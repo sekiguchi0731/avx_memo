@@ -113,7 +113,8 @@ p {
 .forms {
     height: 2.0em;
     margin: 10px 5px;
-    width: fit-content
+    width: fit-content;
+    touch-action: none;
 }
 
 
