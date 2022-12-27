@@ -13,7 +13,7 @@ function ansa() {
     var soshin1 = document.getElementById("btn_a");
     var a_1 = document.getElementById("a1");
 
-    if (ans_a.value == "十") {
+    if (ans_a.value == "10") {
         ans_a.disabled = true;
         soshin1.disabled = true;  
         alertmaker("正解！" + "<br>" + "条件が提示されました！");
@@ -135,7 +135,7 @@ function ansb() {
     var soshin2 = document.getElementById("btn_b");
     var a_2 = document.getElementById("a2");
 
-    if (ans_b.value == "針") {
+    if (ans_b.value == "座") {
         alertmaker("正解！" + "<br>" + "条件が提示されました！");
         ans_b.disabled = true;
         soshin2.disabled = true;
@@ -204,7 +204,7 @@ function ansc() {
     var soshin3 = document.getElementById("btn_c");
     var a_3 = document.getElementById("a3");
 
-    if (ans_c.value == "座") {
+    if (ans_c.value == "needle" || ans_c.value == "NEEDLE" || ans_c.value == "Needle") {
         ans_c.disabled = true;
         soshin3.disabled = true;
         a_3.style.display = "block";
