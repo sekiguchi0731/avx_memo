@@ -126,8 +126,12 @@ th {
     border: 2px rgb(0, 0, 0) solid;
 }
 
-#move1 {
+#move0 {
     visibility: visible;
+}
+
+#move1 {
+    visibility: hidden;
 }
 
 #move2 {

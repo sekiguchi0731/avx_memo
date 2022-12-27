@@ -15,15 +15,9 @@
 <body>
     <div class="main">
         <div class="wrap">
-            <!-- <div class="btn">
-                <button type="button" id="move1" class="qbtn" onclick="displayq1()">1問目</button>
-                <button type="button" id="move2" class="qbtn" onclick="displayq2()">2問目</button>
-                <button type="button" id="move3" class="qbtn" onclick="displayq3()">3問目</button>
-                <button type="button" id="move4" class="qbtn" onclick="displayq4()">4問目</button>
-                <button type="button" id="move5" class="qbtn" onclick="displayq5()">5問目</button>
-            </div> -->
             <nav>
                 <ul id="nav">
+                    <li><a id="move0" class="qbtn" onclick="displayq0()">はじめに</a></li>
                     <li><a id="move1" class="qbtn" onclick="displayq1()">1問目</a></li>
                     <li><a id="move2" class="qbtn" onclick="displayq2()">2問目</a></li>
                     <li><a id="move3" class="qbtn" onclick="displayq3()">3問目</a></li>
@@ -32,7 +26,13 @@
                 </ul>
             </nav>
             <div class="quest">
-                <div id="q1" sytle="display: block;">
+                <div id="q0" sytle="display: block;">
+                    <div class="question">
+                        <img class="questionimg" src="./images/neko.png" alt="">
+                        <br>↑説明画像に変更</br>
+                    </div>
+                </div>
+                <div id="q1" sytle="display: none;">
                     <div class="question">
                         <img class="questionimg" src="./images/q1.png" alt="">
                         <img class="conditionimg" src="./images/1.png" alt="">
@@ -95,6 +95,13 @@
                 <input type="button" id="close" value="閉じる">
             </div>
             <!-- <div class="ans"> -->
+            <div id="a0" style="display: block;">
+                <div class="ans">
+                    <br> 箱を組み立てましたか？<br>
+                    <input type="button" id="btn_jz" class="yesbtn" value="はい" onclick="next()">
+                    </br>
+                </div>
+            </div>
             <div id="a1" style="display: none;">
                 <div class="ans">
                     <img src="./images/j1.png" alt="" srcset="">
