@@ -204,7 +204,7 @@ function ansc() {
     var soshin3 = document.getElementById("btn_c");
     var a_3 = document.getElementById("a3");
 
-    if (ans_c.value == "needle" || ans_c.value == "NEEDLE" || ans_c.value == "Needle") {
+    if (ans_c.value == "針") {
         ans_c.disabled = true;
         soshin3.disabled = true;
         a_3.style.display = "block";
